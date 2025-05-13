@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: beige;
+    min-height: 100dvh;
+    text-align: center;
+    margin-top: 60px;
+    font-family: sans-serif;
+
+}
+
+
+
+.darkmode{
+    background-color: #151414;
+    color: white;
+}
+
+.container h1{
+    padding: 20px;
+}
+
+
+.theme-switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+
+}
+
+
+#theme-switch-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+  
+
+}
+
+
+  
+i{
+    font-size: 4rem;
+}
+
+#theme-switch-button i:last-child{
+    color: yellow;
+}
+
+
+#theme-switch-button i:first-child{
+    display: none;
+}
+
+
+.slide{
+    animation: fadeSlide 0.5s ease;
+}
+
+
+.slidein{
+    animation: fadeSlide 0.5s ease;
+
+}
+
+
+/*animation which enables rotation effect on change of theme.*/
+@keyframes fadeSlide {
+    0% {
+        transform: rotate(0deg) scale(0.5); 
+        opacity: 0; 
+    }
+    100% {
+        transform: rotate(360deg) scale(1); 
+        opacity: 1; 
+    }
+      
+  }
+
+
+
+
